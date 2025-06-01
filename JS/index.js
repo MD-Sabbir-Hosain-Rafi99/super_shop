@@ -17,7 +17,7 @@ function buyNow(target) {
   // ======== Product Price Dhora Hoice ========
 }
 
-
+// Apply Cupon 
 let couponCode = document.getElementById('couponCode');
 let discountPrice = document.getElementById('discountPrice');
 let finalPrice = document.getElementById('finalPrice');
@@ -34,16 +34,14 @@ function applyCupon(){
   }
 }
 
-
-
-// function makePurchase(){
-//   if (sum == sum && ) {
-//     alert(`Dhonnobad total ${sum} taka product kinar jonno without discount!`)
-    
-//   }else if (discountPrice.innerHTML < finalPrice.innerHTML) {
-//     alert(`Apnar Total Price ${sum} Taka, After 20% Discount ${discountPrice.innerHTML} Taka Peyechen, After Discount Total ${finalPrice.innerHTML} Taka`)
-//   }
-// }
+// Make Purchase 
+function makePurchase(){
+  if (couponCode.value == "SELL200") {
+    alert(`After 20% discount total bill : ${finalPrice.innerHTML}`)
+  }else{
+    alert(`Your total bill : ${sum}`);
+  }
+}
 
 
 
